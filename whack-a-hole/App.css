@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #9c6705;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.score {
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+button {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url('./dirt.png') bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.mole {
+  background: url('./mole.png') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+.game-over {
+  background: rgba(255, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  animation: gameOverAnimation 0.5s ease-in-out;
+}
+
+.game-over h2 {
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.game-over p {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+@keyframes gameOverAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
