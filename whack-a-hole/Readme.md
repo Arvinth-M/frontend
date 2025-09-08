@@ -30,7 +30,7 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/whack-a-mole.git
+   git clone https://github.com/Arvinth-M/frontend.git
    cd whack-a-mole
    ```
 
