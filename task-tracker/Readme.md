@@ -1,56 +1,59 @@
-# Whack-a-Mole Game
+# Task Tracker App
 
-![Whack-a-Mole Game](https://whack-a-mole-reactapp-frontend.netlify.app/preview-image.png)
+![Task Tracker App](https://task-tracker-react-app-frontend.netlify.app/preview-image.png)
 
-## 🎮 Description
+## 🎯 Description
 
-Whack-a-Mole is a fun and interactive game built using React. Players aim to "whack" moles that randomly pop up from holes within a time limit. The game challenges reflexes and timing, providing an engaging experience for users of all ages.
+The Task Tracker App is a React application for managing tasks efficiently. Users can **register an account, log in, and track their personal tasks**. It provides a clean interface to add, view, and delete tasks, and supports user-specific data saved in `localStorage`.
 
 ## 🚀 Live Demo
 
-Experience the game live here: [https://whack-a-mole-reactapp-frontend.netlify.app/](https://whack-a-mole-reactapp-frontend.netlify.app/)
+[https://task-tracker-react-app-frontend.netlify.app/](https://task-tracker-react-app-frontend.netlify.app/)
 
 ## 🧩 Features
 
-* **Random Mole Generation**: Moles appear randomly in different holes.
-* **Scoring System**: Earn points by clicking on moles before they disappear.
-* **Timer**: Play against the clock to achieve the highest score.
+* **User Registration & Login**: Each user can create an account and log in to manage their own tasks.
+* **Add Tasks**: Create new tasks with a title and description.
+* **View Tasks**: Tasks are displayed in a list format for the logged-in user.
+* **Delete Tasks**: Remove tasks when completed or no longer needed.
+* **Persistent Data**: Uses `localStorage` to save user and task data across sessions.
 * **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ## 🛠️ Technologies Used
 
-* **React**: JavaScript library for building user interfaces.
-* **CSS**: Styling the game components.
-* **HTML5**: Structuring the game layout.
+* **React**: Frontend library for building dynamic UI.
+* **CSS**: Styling the app components.
+* **HTML5**: Structuring the app layout.
+* **localStorage**: Browser storage for persisting user and task data.
 
 ## 📥 Installation
 
-To run this project locally:
-
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/whack-a-mole.git
-   cd whack-a-mole
-   ```
+```bash
+git clone https://github.com/yourusername/task-tracker.git
+cd task-tracker
+```
 
 2. Install dependencies:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Start the development server:
 
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 
-4. Open your browser and navigate to `http://localhost:3000` to play the game.
+4. Open your browser at `http://localhost:3000`.
 
-## 🎯 How to Play
+## 🎯 How to Use
 
-* Click on the moles that pop up to score points.
-* Each mole disappears after a short time.
-* The game ends when the timer runs out, and your final score is displayed.
-
+1. **Register a new user** by filling in the registration form.
+2. **Login** with your credentials.
+3. **Add tasks** using the input form.
+4. **View your tasks**; tasks are user-specific.
+5. **Delete tasks** when done.
+6. **Logout** to switch accounts.
