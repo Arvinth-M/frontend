@@ -31,7 +31,7 @@ The Task Tracker App is a React application for managing tasks efficiently. User
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/task-tracker.git
+git clone https://github.com/Arvinth-M/frontend.git
 cd task-tracker
 ```
 
